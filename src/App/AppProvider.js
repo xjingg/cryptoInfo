@@ -121,7 +121,6 @@ export class AppProvider extends React.Component {
             currentFavorite
         }));
     }
-
     setCurrentFavorite = (sym) => {
         this.setState({
             currentFavorite: sym,
@@ -133,7 +132,6 @@ export class AppProvider extends React.Component {
             currentFavorite: sym
         }))
     }
-
     savedSettings(){
         let cryptoDashData = JSON.parse(localStorage.getItem('cryptoDash'));
         if(!cryptoDashData){
